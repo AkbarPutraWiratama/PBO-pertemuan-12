@@ -43,7 +43,7 @@ public class HitungNilai {
         frame.getContentPane().add(nimLabel);
 
         nimField = new JTextField();
-        nimField.setBounds(453, 20, 150, 25);
+        nimField.setBounds(130, 20, 150, 25);
         frame.getContentPane().add(nimField);
 
         JLabel nameLabel = new JLabel("Nama");
@@ -76,7 +76,7 @@ public class HitungNilai {
         frame.getContentPane().add(grade1Label);
 
         grade1Field = new JTextField();
-        grade1Field.setBounds(130, 20, 150, 25);
+        grade1Field.setBounds(453, 20, 150, 25);
         frame.getContentPane().add(grade1Field);
 
         JLabel grade2Label = new JLabel("Nilai 2 [15%]");
@@ -133,7 +133,7 @@ public class HitungNilai {
         tableModel = new DefaultTableModel(new Object[]{"NIM", "Nama", "Alamat", "Mata Kuliah", "Nilai Akhir"}, 0);
         table = new JTable(tableModel);
         JScrollPane scrollPane = new JScrollPane(table);
-        scrollPane.setBounds(10, 200, 593, 250);
+        scrollPane.setBounds(10, 200, 560, 250);
         frame.getContentPane().add(scrollPane);
 
         // Action Listeners
