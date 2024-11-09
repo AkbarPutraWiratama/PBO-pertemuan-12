@@ -37,7 +37,6 @@ public class HitungNilai {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.getContentPane().setLayout(null);
 
-        // Label dan Text Field
         JLabel nimLabel = new JLabel("NIM");
         nimLabel.setBounds(40, 20, 80, 25);
         frame.getContentPane().add(nimLabel);
@@ -70,7 +69,6 @@ public class HitungNilai {
         courseField.setBounds(130, 110, 150, 25);
         frame.getContentPane().add(courseField);
 
-        // Grade Fields
         JLabel grade1Label = new JLabel("Nilai 1 [10%]");
         grade1Label.setBounds(330, 20, 113, 25);
         frame.getContentPane().add(grade1Label);
@@ -120,7 +118,6 @@ public class HitungNilai {
         finalGradeField.setEditable(false);
         frame.getContentPane().add(finalGradeField);
 
-        // Buttons
         JButton saveButton = new JButton("Simpan");
         saveButton.setBounds(130, 150, 80, 30);
         frame.getContentPane().add(saveButton);
@@ -129,14 +126,12 @@ public class HitungNilai {
         deleteButton.setBounds(220, 150, 80, 30);
         frame.getContentPane().add(deleteButton);
 
-        // Table
         tableModel = new DefaultTableModel(new Object[]{"NIM", "Nama", "Alamat", "Mata Kuliah", "Nilai Akhir"}, 0);
         table = new JTable(tableModel);
         JScrollPane scrollPane = new JScrollPane(table);
         scrollPane.setBounds(10, 200, 560, 250);
         frame.getContentPane().add(scrollPane);
 
-        // Action Listeners
         saveButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
